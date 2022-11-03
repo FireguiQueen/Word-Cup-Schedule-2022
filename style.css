@@ -1,0 +1,89 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Medida se baseia na borda, e não no conteúdo. */ 
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; /* Coloca tudo para maiúsculo */ 
+}
+
+body{
+    background-color: black;
+    background-image: url(./assets/background.svg);
+    background-position-x: center;
+    background-position-y: 20%;
+}
+#app{ 
+    width: fit-content;  /* A largura terá o tamanho necessário para armazenar o conteúdo. Ou seja, o tamanho da caixa irá se basear na quantidade de conteúdo. */ 
+    margin: 55px auto;
+}
+header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações)  */ 
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.card{  /* Cartão, contém: Dia da semana, mês/dia   &   países que irão jogar */ 
+    border: 1px solid #f7dc439f;
+    border-radius: 10px;
+    background-color: #1D1C19;
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+}
+
+
+.card h2{  /* Cartão, contém: Dia semana   &   mês/dia */
+    display: flex;           
+    justify-content: center; 
+    gap: 16px;         
+    align-items: center;   
+    width: fit-content;
+    margin: auto; 
+    border: 1px solid  #e9d04476;
+    border-radius: 9px;
+    padding: 8px 15px;
+    color: #F7DD43;
+    margin-bottom: 44px;
+}
+.DayOfTheWeek{
+    font-size: large;
+    color: #E1E1E6;
+}   
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    width: 270px;
+
+}
+.card ul li + li{ /* Este + significa que, toda a declaration abaixo só sera adicionada caso exista uma li antes da outra */
+    padding-top: 36px;
+    border-top: 1px solid rgba(123, 110, 110, 0.445);
+    border-radius: 5px;
+}
+
+
+.card ul li{ /* Cartão, contém: Horário  &  países que irão jogar */  
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.card ul li strong{ /* Cartão, contém: Horário */ 
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 145%;
+    color: #E1E1E6;
+}
+
+
+
+
+/*
+display: flex;            - Tags filhas e irmãs serão agrupadas. Nos permite adicionar mais proprities 
+gap: 16px;                - Significa "abertura", ou seja, uma abertura de 16px entre as tags irmãs
+
+justify-content: center;  - Significa "justificar", ou seja, estamos alinhando o conteúdo para o centro da linha  
+align-items: center;      - Alinhar o item de maneira vertifcal
+*/ 
