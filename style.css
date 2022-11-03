@@ -11,10 +11,14 @@ body{
     background-image: url(./assets/background.svg);
     background-position-x: center;
     background-position-y: 20%;
+    background-position: center;
 }
 #app{ 
     width: fit-content;  /* A largura terá o tamanho necessário para armazenar o conteúdo. Ou seja, o tamanho da caixa irá se basear na quantidade de conteúdo. */ 
-    margin: 55px auto;
+    margin-top: 55px;
+    margin-inline: auto;
+    margin-bottom: 52px;
+
 }
 header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações)  */ 
     margin-bottom: 100px;
@@ -76,7 +80,6 @@ header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações) 
     line-height: 145%;
     color: #E1E1E6;
 }
-
 
 
 
