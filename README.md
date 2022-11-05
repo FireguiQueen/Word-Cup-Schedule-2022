@@ -13,7 +13,7 @@ With this small project you can see the date and time of the world cup matches.
 
 ## :sunrise: Layout 
 All icons, images, backgrounds, logos you can take <a href="https://www.figma.com/file/NNWTIgAsceT5Kjtu9HdHlr/Calend%C3%A1rio-de-Jogos-(Community)?node-id=0%3A1">here</a> </br>
-You have to create an account on Figma if you want to save files and modify the layout (color, size..).  
+You have to create an account on Figma if you want to save files and modify the layout (font, color, size..).  
 
 
 </br>
