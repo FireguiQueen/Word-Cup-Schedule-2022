@@ -1,9 +1,8 @@
 <h1 align="center"> World Cup Schedule - 2022 </h1>
 
-<li> <a href="#sparkles-project">Project</a>
-<li> <a href="#sunrise-layout">Layout</a>
-<li> <a href="#computer-technologies">Technologies</a>
-
+<li type="square"> <a href="#sparkles-project">Project</a>
+<li type="square"> <a href="#sunrise-layout">Layout</a>
+<li type="square"> <a href="#computer-technologies">Technologies</a>
 
 
 ## :sparkles: Project
