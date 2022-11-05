@@ -8,7 +8,7 @@
 
 body{
     background-color: black;
-    background-image: url(./assets/background.svg);
+    background-image: url(./assets/others/background.svg);
     background-position-x: center;
     background-position-y: 20%;
 }
@@ -16,7 +16,8 @@ body{
     width: fit-content;  /* A largura terá o tamanho necessário para armazenar o conteúdo. Ou seja, o tamanho da caixa irá se basear na quantidade de conteúdo. */ 
     margin: 55px auto;
 }
-header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações)  */ 
+
+header{ /* Cabeçalho, contém: Logo */ 
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -24,7 +25,7 @@ header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações) 
 
 
 
-.card{  /* Cartão, contém: Dia da semana, mês/dia   &   países que irão jogar */ 
+.card{ /* Cartão, contém: Dia da semana   &   mês/dia   &   horário   &   países que irão jogar */ 
     border: 1px solid #f7dc439f;
     border-radius: 10px;
     background-color: #1D1C19;
@@ -57,7 +58,7 @@ header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações) 
     width: 270px;
 
 }
-.card ul li + li{ /* Este + significa que, toda a declaration abaixo só sera adicionada caso exista uma li antes da outra */
+.card ul li + li{ /* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
     padding-top: 36px;
     border-top: 1px solid rgba(123, 110, 110, 0.445);
     border-radius: 5px;
@@ -71,9 +72,9 @@ header{ /* Cabeçalho, contém: Logo (Schuedule)   &   about me (informações) 
     
 }
 .card ul li strong{ /* Cartão, contém: Horário */ 
+    line-height: 145%;
     font-weight: 900;
     font-size: 36px;
-    line-height: 145%;
     color: #E1E1E6;
 }
 
