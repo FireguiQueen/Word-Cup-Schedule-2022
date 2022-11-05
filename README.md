@@ -19,3 +19,5 @@ You have to create an account on Figma if you want to save files and modify the 
 </br>
 
 ## :computer: Technologies
+- HTML
+- CSS 
