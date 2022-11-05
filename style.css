@@ -82,9 +82,30 @@ header{ /* Cabeçalho, contém: Logo */
 
 
 /*
-display: flex;            - Tags filhas e irmãs serão agrupadas. Nos permite adicionar mais proprities 
-gap: 16px;                - Significa "abertura", ou seja, uma abertura de 16px entre as tags irmãs
+Explicando algumas propriedades e seus valores.: 
 
-justify-content: center;  - Significa "justificar", ou seja, estamos alinhando o conteúdo para o centro da linha  
-align-items: center;      - Alinhar o item de maneira vertifcal
+
+display: flex;         
+- Imagine que você possui um contaíner, e você através do "display: flex", podemos cortar este contêiner em duas partes.
+> Ambas as partes pegaram o centro do contêiner e o cortaram, uma cortou na vertical, e a outra na horizontal. 
+> Com isto, agora podemos organizar os conteúdos dentro deste contêiner de maneira completa. 
+> Podemos pegar um conteúdo, escolher se ele vai ficar no centro na vertical, ou para cima, baixo e etc..
+> Assim como podemos escolher se ele vai ficar no centro na horizontal, para a esquerda, direita, meia esquerda e etc.. 
+- Tags filhas e irmãs serão agrupadas. 
+
+
+gap: Unidade_de_medida;                
+- Significa "abertura"
+- É utilizada para alterar o espaço entre as tags irmãs feitas pelo "display: flex"
+- Está no shorthand, então altera o espaço na linha e na coluna.
+- Utilize row-gap para o espaço dentro da linham, e grid-gap para o espaço na coluna. 
+
+
+justify-content: center;  
+- Estamos dizendo em qual posição o conteúdo irá ficar na horizontal (centro, esquerda, meio esquerda, direita..)
+
+
+align-items: center;      
+- Estamos dizendo em qual posição o conteúdo irá ficar na vertical (totalmente para cima, baixo, meio, abaixo do centro..)
+
 */ 
