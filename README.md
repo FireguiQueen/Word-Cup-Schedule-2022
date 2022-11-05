@@ -4,13 +4,14 @@
 <li type="square"> <a href="#sunrise-layout">Layout</a>
 <li type="square"> <a href="#computer-technologies">Technologies</a>
 
-<p align="center">
-  <img alt="calendário da copa" src="./assets/others/apresentation.png" width="100%">
-</p>
+
 
 ## :sparkles: Project
 With this small project you can see the date and time of the world cup matches. </br>
 [*Not finished yet*]
+<p align="center">
+  <img alt="calendário da copa" src="./assets/others/apresentation.png" width="100%">
+</p>
 
 </br>
 
