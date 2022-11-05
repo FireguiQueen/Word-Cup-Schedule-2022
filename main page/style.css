@@ -8,7 +8,7 @@
 
 body{
     background-color: black;
-    background-image: url(./assets/others/background.svg);
+    background-image: url(../assets/others/background.svg);
     background-position-x: center;
     background-position-y: 20%;
 }
