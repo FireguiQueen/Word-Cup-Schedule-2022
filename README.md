@@ -5,7 +5,7 @@
 <li type="square"> <a href="#computer-technologies">Technologies</a>
 
 <p align="center">
-  <img alt="calendário da copa" src="./assets/others/apresentation.png" width="100%" height="94%">
+  <img alt="calendário da copa" src="./assets/others/apresentation.png" width="100%" height="84%">
 </p>
 
 ## :sparkles: Project
