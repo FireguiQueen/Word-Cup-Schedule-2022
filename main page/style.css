@@ -23,7 +23,6 @@ header{ /* Cabeçalho, contém: Logo */
     justify-content: center;
 }
 
-
 .card{ /* Cartão, contém: Dia da semana   &   mês/dia   &   horário   &   países que irão jogar */ 
     border: 1px solid #f7dc439f;
     border-radius: 10px;
