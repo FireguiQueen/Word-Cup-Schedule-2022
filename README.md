@@ -1,6 +1,6 @@
 <h1 align="center"> World Cup Schedule - 2022 </h1>
 
-<li> <a href="#-project">Project</a>
+<li> <a href="#project">Project</a>
 <li> <a href="#-layout">Layout</a>
 <li> <a href="#-technologies">Technologies</a>
 
