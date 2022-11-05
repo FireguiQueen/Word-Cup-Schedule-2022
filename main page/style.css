@@ -24,7 +24,6 @@ header{ /* Cabeçalho, contém: Logo */
 }
 
 
-
 .card{ /* Cartão, contém: Dia da semana   &   mês/dia   &   horário   &   países que irão jogar */ 
     border: 1px solid #f7dc439f;
     border-radius: 10px;
@@ -79,11 +78,8 @@ header{ /* Cabeçalho, contém: Logo */
 }
 
 
-
-
 /*
 Explicando algumas propriedades e seus valores.: 
-
 
 display: flex;         
 - Imagine que você possui um contaíner, e você através do "display: flex", podemos cortar este contêiner em duas partes.
