@@ -1,5 +1,5 @@
 <h1 align="center"> World Cup Schedule - 2022  </h1>
-*NOT FINISHED*
+*not finished yet*
 
 <li type="square"> <a href="#sparkles-project">Project</a>
 <li type="square"> <a href="#sunrise-layout">Layout</a>
