@@ -1,4 +1,4 @@
-# World Cup Schedule (2022)
+<h1 align="center"> World Cup Schedule - 2022 </h1>
 Here you can see the date and time of the world cup games. 
 
 
