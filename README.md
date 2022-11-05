@@ -10,7 +10,7 @@
 
 ## :sparkles: Project
 With this small project you can see the date and time of the world cup matches. </br>
-*not finished yet*
+[*Not finished yet*]
 
 </br>
 
