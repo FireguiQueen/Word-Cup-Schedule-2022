@@ -46,7 +46,7 @@ header{ /* Cabeçalho, contém: Logo */
     color: #F7DD43;
     margin-bottom: 44px;
 }
-.DayOfTheWeek{
+.DayOfTheWeek{ /* Dia da semana (quinta, sexta..) */
     font-size: large;
     color: #E1E1E6;
 }   
