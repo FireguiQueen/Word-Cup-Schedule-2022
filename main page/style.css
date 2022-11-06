@@ -6,6 +6,8 @@
     text-transform: uppercase; /* Coloca tudo para maiúsculo */ 
 }
 
+
+
 body{
     background-color: black;
     background-image: url(../assets/others/background.svg);
@@ -13,18 +15,27 @@ body{
     background-position-y: 20%;
 }
 
-#app{ /* Toda nossa aplicação, da logo até a última borda */
+
+
+/* Toda nossa aplicação, da logo até a última borda */
+#app{ 
     width: fit-content;  
     margin: 55px auto;
 }
 
-header{ /* Cabeçalho, contém: Logo */ 
+
+
+/* Cabeçalho, contém: Logo */ 
+header{ 
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
 }
 
-.card{ /*  Dia da semana   &   mês/dia   &   horário   &   países que irão jogar   */ 
+
+
+/*  Dia da semana   &   mês/dia   &   horário   &   países que irão jogar   */ 
+.card{ 
     border: 1px solid #f7dc439f;
     border-radius: 10px;
     background-color: #1D1C19;
@@ -33,50 +44,76 @@ header{ /* Cabeçalho, contém: Logo */
 }
 
 
-.card h2{  /*  Dia semana   &   mês/dia   */
+
+/*  Dia semana   &   mês/dia   */
+.card h2{  
     display: flex;           
     justify-content: center; 
-    gap: 16px;         
     align-items: center;   
+    gap: 16px;         
     width: fit-content;
-    margin: auto; 
+    margin: auto auto 44px;
+    padding: 8px 15px;
     border: 1px solid  #e9d04476;
     border-radius: 9px;
-    padding: 8px 15px;
     color: #F7DD43;
-    margin-bottom: 44px;
 }
-.DayOfTheWeek{ /* Dia da semana (quinta, sexta..) */
+
+
+
+/* Dia da semana (quinta, sexta..) */
+.DayOfTheWeek{ 
     font-size: large;
     color: #E1E1E6;
 }   
-.card ul{ /* Times   &   horários   &   bordas de separação entre <li> */
-    border: 1px solid red;
+
+
+
+/* Times   &   horários   &   bordas de separação entre <li> */
+.card ul{ 
     display: flex;
     flex-direction: column;
     gap: 42px;
     width: 270px;
-
 }
-.card ul li + li{ /* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
+
+
+
+#calendar div + div{
+    margin-top: 55px;
+}
+
+
+
+/* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
+.card ul li + li{ 
     padding-top: 36px;
     border-top: 1px solid rgba(123, 110, 110, 0.445);
     border-radius: 5px;
 }
 
 
-.card ul li{ /* Horário  &  países que irão jogar */  
+
+/* Horário  &  países que irão jogar */ 
+.card ul li{  
     display: flex;
     text-align: center;
     justify-content: space-between;
     
 }
-.card ul li strong{ /* Somente o horário */ 
+
+
+
+/* Somente o horário */ 
+.card ul li strong{ 
     line-height: 145%;
     font-weight: 900;
     font-size: 36px;
     color: #E1E1E6;
 }
+
+
+
 
 
 /*
