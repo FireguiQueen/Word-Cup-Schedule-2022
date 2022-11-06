@@ -12,8 +12,9 @@ body{
     background-position-x: center;
     background-position-y: 20%;
 }
-#app{ 
-    width: fit-content;  /* A largura terá o tamanho necessário para armazenar o conteúdo. Ou seja, o tamanho da caixa irá se basear na quantidade de conteúdo. */ 
+
+#app{ /* Toda nossa aplicação, da logo até a última borda */
+    width: fit-content;  
     margin: 55px auto;
 }
 
@@ -23,7 +24,7 @@ header{ /* Cabeçalho, contém: Logo */
     justify-content: center;
 }
 
-.card{ /* Cartão, contém: Dia da semana   &   mês/dia   &   horário   &   países que irão jogar */ 
+.card{ /*  Dia da semana   &   mês/dia   &   horário   &   países que irão jogar   */ 
     border: 1px solid #f7dc439f;
     border-radius: 10px;
     background-color: #1D1C19;
@@ -32,7 +33,7 @@ header{ /* Cabeçalho, contém: Logo */
 }
 
 
-.card h2{  /* Cartão, contém: Dia semana   &   mês/dia */
+.card h2{  /*  Dia semana   &   mês/dia   */
     display: flex;           
     justify-content: center; 
     gap: 16px;         
@@ -49,7 +50,8 @@ header{ /* Cabeçalho, contém: Logo */
     font-size: large;
     color: #E1E1E6;
 }   
-.card ul{
+.card ul{ /* Times   &   horários   &   bordas de separação entre <li> */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 42px;
@@ -63,13 +65,13 @@ header{ /* Cabeçalho, contém: Logo */
 }
 
 
-.card ul li{ /* Cartão, contém: Horário  &  países que irão jogar */  
+.card ul li{ /* Horário  &  países que irão jogar */  
     display: flex;
     text-align: center;
     justify-content: space-between;
     
 }
-.card ul li strong{ /* Cartão, contém: Horário */ 
+.card ul li strong{ /* Somente o horário */ 
     line-height: 145%;
     font-weight: 900;
     font-size: 36px;
