@@ -1,7 +1,6 @@
 *{  
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Medida se baseia na borda, e não no conteúdo. */ 
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase; /* Coloca tudo para maiúsculo */ 
 }
@@ -9,17 +8,20 @@
 
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     background-image: url(../assets/others/background.svg);
-    background-position-x: center;
-    background-position-y: 20%;
+    background-position: center 20%;
+    background-repeat: no-repeat;
 }
 
+#calendar{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* Toda nossa aplicação, da logo até a última borda */
 #app{ 
-    width: fit-content;  
     margin: 55px auto;
 }
 
@@ -27,6 +29,8 @@ body{
 
 /* Cabeçalho, contém: Logo */ 
 header{ 
+    margin-top: 25px;
+    border: 1px solid red;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -34,8 +38,9 @@ header{
 
 
 
-/*  Dia da semana   &   mês/dia   &   horário   &   países que irão jogar   */ 
+/*  Dia da semana    &    mês/dia    &   horário   &   países que irão jogar   */ 
 .card{ 
+    width: fit-content;  
     border: 1px solid #f7dc439f;
     border-radius: 10px;
     background-color: #1D1C19;
