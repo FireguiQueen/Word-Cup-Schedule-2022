@@ -6,7 +6,6 @@
 }
 
 
-
 body{
     background-color: rgb(0, 0, 0);
     background-image: url(../assets/others/background.svg);
@@ -14,35 +13,32 @@ body{
     background-repeat: no-repeat;
 }
 
-#calendar{
+
+/* Cabeçalho, contém: Logo */ 
+header{ 
+    margin-top: 23px;
+    margin-bottom: 95px;
     display: flex;
     justify-content: center;
 }
 
 
 /* Toda nossa aplicação, da logo até a última borda */
-#app{ 
-    margin: 55px auto;
-}
-
-
-
-/* Cabeçalho, contém: Logo */ 
-header{ 
-    margin-top: 25px;
-    border: 1px solid red;
-    margin-bottom: 100px;
+#cartoes { 
     display: flex;
     justify-content: center;
+} 
+
+#cards{
+    display: flex;
+    gap: 20px;
 }
 
-
-
-/*  Dia da semana    &    mês/dia    &   horário   &   países que irão jogar   */ 
+/* TUDO DENTRO DO CARTÃO: dia da semana   &  mês/dia  &   horário  &  países que irão jogar   */ 
 .card{ 
     width: fit-content;  
-    border: 1px solid #f7dc439f;
-    border-radius: 10px;
+    border-bottom: 1.3px solid #f7dc439f;
+    border-radius: 14px;
     background-color: #1D1C19;
     padding: 20px 40px;
     text-align: center;
@@ -50,7 +46,8 @@ header{
 
 
 
-/*  Dia semana   &   mês/dia   */
+
+/*  Dia semana  &  mês/dia   */
 .card h2{  
     display: flex;           
     justify-content: center; 
@@ -84,10 +81,9 @@ header{
 
 
 
-#calendar div + div{
+/* #calendar div + div{
     margin-top: 55px;
-}
-
+} */
 
 
 /* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
@@ -103,8 +99,7 @@ header{
 .card ul li{  
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 
@@ -113,7 +108,7 @@ header{
 .card ul li strong{ 
     line-height: 145%;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 37px;
     color: #E1E1E6;
 }
 
