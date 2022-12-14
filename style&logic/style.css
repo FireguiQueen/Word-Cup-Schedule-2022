@@ -15,6 +15,10 @@ body{
     background-image: var(--background-name);
     background-position: center;
     background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 :root{
     /* Borda que aparece quando há mais de um jogo no mesmo dia. Esta borda separa os jogos */
@@ -54,6 +58,7 @@ body.red{
 
 
 
+
 /* Cabeçalho, contém: Logo | Mudar a cor */ 
 header{ 
     display: flex;
@@ -71,7 +76,13 @@ header img{
     margin-inline: 400px;
 }
 
-
+footer{ 
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 250px;
+    justify-content: center;
+}
 
 /* Todos os calendários*/
 #cartoes{ 
@@ -109,8 +120,7 @@ header img{
     padding: 8px 15px;
     border: 1px solid  var(--date-border-color);
     border-radius: 9px;
-    color: var(--date-text-color)
-
+    color: var(--date-text-color);
 }
 
 
@@ -202,10 +212,6 @@ align-items: center;
 
 
 
-
-
-
-
 input { 
     width: fit-content;
     height: fit-content;
@@ -217,4 +223,3 @@ input:hover{
     opacity: 0.7;
 }
 
-@media ()
