@@ -23,20 +23,21 @@ function CreatGames(team1, time, team2){
 }
 
 
-var calendar = document.querySelector('#cartoes')
-
-calendar.innerHTML = 
-CreatSchedule('11/12', 'segunda', CreatGames('brazil', '15:20', 'uruguai') + CreatGames('switzerland', '12:20', 'portugal')) +
-CreatSchedule('11/12', 'segunda', CreatGames('brazil', '15:20', 'uruguai')) + 
-CreatSchedule('11/12', 'segunda', CreatGames('brazil', '15:20', 'uruguai')) + 
-CreatSchedule('11/12', 'segunda', CreatGames('brazil', '15:20', 'uruguai'))
+var CreatSchedules = document.querySelector('#cartoes')
+CreatSchedules.innerHTML = 
+CreatSchedule('11/12', 'Monday', CreatGames('brazil', '15:20', 'uruguai') + CreatGames('switzerland', '12:20', 'portugal')) +
+CreatSchedule('23/12', 'Tuesday', CreatGames('brazil', '15:20', 'uruguai')) + 
+CreatSchedule('15/12', 'Friday', CreatGames('brazil', '15:20', 'uruguai')) + 
+CreatSchedule('18/12', 'Saturday', CreatGames('brazil', '15:20', 'uruguai'))
 
 // CreatSchedule('11/11', 'monday', CreatGames('cameroon', '16:30', 'uruguai')) +
 // CreatSchedule('11/11', 'monday', CreatGames('brazil', '16:30', 'switzerland') + CreatGames('brazil', '16:30', 'switzerland'))
 
 
 
-function ChangeColor(){ 
-    var ide = document.getElementsByTagName('main')[0];
-    ide.setAttribute('class', 'blue');
+var page_color = document.getElementsByTagName('body')[0];
+
+function ChangeColor(ButtonColor){ 
+    page_color.style.animation = 'visibility 2s';
+    page_color.setAttribute('class', `${ButtonColor}`);
 }
