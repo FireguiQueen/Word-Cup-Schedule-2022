@@ -11,7 +11,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     background-attachment: fixed;
     background-size: cover;
     background-color: black;
@@ -19,10 +18,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 :root{
     /* Borda que aparece quando há mais de um jogo no mesmo dia. Esta borda separa os jogos */
     --between-games-border-color: rgba(123, 110, 110, 0.445);
 }
+
 
 body.normal-color{ 
     --background-name: url(../assets/Backgrounds/BC_Normal.svg);
@@ -75,13 +76,7 @@ header img{
     margin-inline: 400px;
 }
 
-footer{ 
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-    margin-top: 250px;
-    justify-content: center;
-}
+
 
 /* Todos os calendários*/
 #cartoes{ 
@@ -124,9 +119,6 @@ footer{
 
 
 
-
-
-
 /* Times   &   horários   &   bordas de separação entre <li> */
 .card ul{ 
     display: flex;
@@ -137,8 +129,7 @@ footer{
 
 
 
-
-/* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
+/* Toda a declaration abaixo será adicionada caso exista uma <li> antes de uma <li> */
 .card ul li + li{ 
     padding-top: 36px;
     border-top: 1px solid var(--between-games-border-color);
@@ -163,6 +154,7 @@ footer{
     font-size: 37px;
     color: #E1E1E6;
 }
+
 
 
 /*          Animações               */
@@ -211,14 +203,5 @@ align-items: center;
 
 
 
-input { 
-    width: fit-content;
-    height: fit-content;
-    padding: 6.4px;
-    background-color: #70261f;
-    border-radius: 9px;
-}
-input:hover{ 
-    opacity: 0.7;
-}
+
 
