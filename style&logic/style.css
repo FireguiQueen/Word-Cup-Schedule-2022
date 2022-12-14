@@ -8,17 +8,16 @@
 
 
 body{
-    /* background-image: linear-gradient(50deg, rgb(24, 22, 38) 40%, rgb(59, 64, 41), rgba(118, 98, 55, 0.623)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     background-attachment: fixed;
     background-size: cover;
     background-color: black;
     background-image: var(--background-name);
     background-position: center;
     background-repeat: no-repeat;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 :root{
     /* Borda que aparece quando há mais de um jogo no mesmo dia. Esta borda separa os jogos */
