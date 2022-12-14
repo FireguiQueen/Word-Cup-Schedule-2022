@@ -38,6 +38,6 @@ CreatSchedule('18/12', 'Saturday', CreatGames('brazil', '15:20', 'uruguai'))
 var page_color = document.getElementsByTagName('body')[0];
 
 function ChangeColor(ButtonColor){ 
-    page_color.style.animation = 'visibility 2s';
+    page_color.style.animation = 'visibility 2s forwards';
     page_color.setAttribute('class', `${ButtonColor}`);
 }
