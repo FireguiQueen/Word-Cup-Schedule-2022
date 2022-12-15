@@ -165,7 +165,7 @@ body.red{
 
 /*          Animações               */
 .card{ 
-    transition: 300ms transform cubic-bezier(.42, 0, .65, 1.7);
+    transition: 245ms transform cubic-bezier(.42, 0, .65, 1.7);
 
 }
 .card:hover{ 
