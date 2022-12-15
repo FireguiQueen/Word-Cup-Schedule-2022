@@ -12,6 +12,7 @@ function CreatSchedule(date, day, games){
     `
 }
 
+
 function CreatGames(team1, time, team2){
     return`
         <li>

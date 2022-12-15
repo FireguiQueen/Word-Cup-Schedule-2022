@@ -10,46 +10,17 @@ body{
     flex-direction: column;
     justify-content: center;
     background-attachment: fixed;
-    background-size: 150%;
+    background-size: cover;
     background-color: black;
     background-image: var(--background-name);
     background-repeat: no-repeat;
-    animation: posicao 8s forwards;
+    animation: entrada 2.5s forwards;
+
 }
 :root{
     /* Borda que aparece quando há mais de um jogo no mesmo dia. Esta borda separa os jogos */
     --between-games-border-color: rgba(123, 110, 110, 0.445);
-}
 
-
-
-body.normal-color{ 
-    --background-name: url(../assets/Backgrounds/BC_Normal.svg);
-    --card-color: #2f163d;
-    --card-border-color: #f743bb9f; 
-    --date-border-color: #a30fb076;
-    --date-text-color: #ed88d7;
-}
-body.blue{ 
-    --background-name: url(../assets/Backgrounds/BC_Blue.svg);
-    --card-color: #1c1f3a;
-    --card-border-color: #43d3f79f; 
-    --date-border-color: #2cd0ea76;
-    --date-text-color: #9bf2d8;
-}
-body.green{ 
-    --background-name: url(../assets/Backgrounds/BC_Green.svg);
-    --card-color: #191d19;
-    --card-border-color: #2fc6179f; 
-    --date-border-color: #44e9aa76;
-    --date-text-color: #8fec6b;
-}
-body.red{
-    --background-name: url(../assets/Backgrounds/BC_Red.svg);
-    --card-color: #3a1c1c;
-    --card-border-color: #de2817; 
-    --date-border-color: #f1395a;
-    --date-text-color: #e77e7e;
 }
 
 
@@ -80,8 +51,6 @@ header img{
     gap: 20px;
 } 
 
-
-
 /* TUDO DENTRO DO CARTÃO: dia da semana   &  mês/dia  &   horário  &  países que irão jogar   */ 
 .card{ 
     width: fit-content;  
@@ -95,9 +64,6 @@ header img{
     opacity: 0;
     animation: visibility 1s forwards;
 }
-
-
-
 /*  Dia semana  &  mês/dia   */
 .card h2{  
     display: flex;           
@@ -111,9 +77,6 @@ header img{
     border-radius: 9px;
     color: var(--date-text-color);
 }
-
-
-
 /* Times   &   horários   &   bordas de separação entre <li> */
 .card ul{ 
     display: flex;
@@ -121,27 +84,18 @@ header img{
     gap: 42px;
     width: 270px;
 }
-
-
-
 /* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
 .card ul li + li{ 
     padding-top: 36px;
     border-top: 1px solid var(--between-games-border-color);
     border-radius: 5px;
 }
-
-
-
 /* Horário  &  países que irão jogar */ 
 .card ul li{  
     display: flex;
     text-align: center;
     justify-content: space-between;    
 }
-
-
-
 /* Somente o horário */ 
 .card ul li strong{ 
     line-height: 145%;
@@ -149,6 +103,8 @@ header img{
     font-size: 37px;
     color: #E1E1E6;
 }
+
+
 
 
 
@@ -172,13 +128,48 @@ footer input:hover{
 
 
 
+body.normal-color{ 
+    --background-name: url(../assets/Backgrounds/BC_Normal.svg);
+    --card-color: #2f163d;
+    --card-border-color: #f743bb9f; 
+    --date-border-color: #a30fb076;
+    --date-text-color: #ed88d7;
+}
+body.blue{ 
+    --background-name: url(../assets/Backgrounds/BC_Blue.svg);
+    --card-color: #1c1f3a;
+    --card-border-color: #43d3f79f; 
+    --date-border-color: #2cd0ea76;
+    --date-text-color: #9bf2d8;
+
+}
+body.green{ 
+    --background-name: url(../assets/Backgrounds/BC_Green.svg);
+    --card-color: #191d19;
+    --card-border-color: #2fc6179f; 
+    --date-border-color: #44e9aa76;
+    --date-text-color: #8fec6b;
+}
+body.red{
+    --background-name: url(../assets/Backgrounds/BC_Red.svg);
+    --card-color: #3a1c1c;
+    --card-border-color: #de2817; 
+    --date-border-color: #f1395a;
+    --date-text-color: #e77e7e;
+}
+
+
+
+
+
+
 /*          Animações               */
 .card{ 
-    transition: 700ms transform cubic-bezier(.42, 0, .65, 1.7);
+    transition: 300ms transform cubic-bezier(.42, 0, .65, 1.7);
 
 }
 .card:hover{ 
-    transform: scale(1.08);
+    transform: scale(1.07);
     transition: 100ms transform cubic-bezier(.42, 0, .65, 1.7);
 }
 
@@ -191,7 +182,9 @@ footer input:hover{
         opacity: 1;
     }
 }
-@keyframes posicao{ 
+
+
+@keyframes entrada{ 
     from{
         background-position: 45deg, 0%;
         background-size: 150%;
