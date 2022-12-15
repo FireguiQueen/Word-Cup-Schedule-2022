@@ -5,24 +5,22 @@
     font-size: large;
     color: #E1E1E6;
 }
-
-
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 150%;
     background-color: black;
     background-image: var(--background-name);
-    background-position: center;
     background-repeat: no-repeat;
+    animation: posicao 8s forwards;
 }
-
 :root{
     /* Borda que aparece quando há mais de um jogo no mesmo dia. Esta borda separa os jogos */
     --between-games-border-color: rgba(123, 110, 110, 0.445);
 }
+
 
 
 body.normal-color{ 
@@ -32,8 +30,6 @@ body.normal-color{
     --date-border-color: #a30fb076;
     --date-text-color: #ed88d7;
 }
-
-
 body.blue{ 
     --background-name: url(../assets/Backgrounds/BC_Blue.svg);
     --card-color: #1c1f3a;
@@ -55,7 +51,6 @@ body.red{
     --date-border-color: #f1395a;
     --date-text-color: #e77e7e;
 }
-
 
 
 
@@ -86,6 +81,7 @@ header img{
 } 
 
 
+
 /* TUDO DENTRO DO CARTÃO: dia da semana   &  mês/dia  &   horário  &  países que irão jogar   */ 
 .card{ 
     width: fit-content;  
@@ -99,7 +95,6 @@ header img{
     opacity: 0;
     animation: visibility 1s forwards;
 }
-
 
 
 
@@ -129,7 +124,7 @@ header img{
 
 
 
-/* Toda a declaration abaixo será adicionada caso exista uma <li> antes de uma <li> */
+/* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
 .card ul li + li{ 
     padding-top: 36px;
     border-top: 1px solid var(--between-games-border-color);
@@ -157,14 +152,38 @@ header img{
 
 
 
-/*          Animações               */
-
-.card:hover{ 
-    transform: scale(1.05);
-    transition: transform 0.5;
+footer{ 
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 250px;
+    justify-content: center;
+}
+footer input{ 
+    width: fit-content;
+    height: fit-content;
+    padding: 6.4px;
+    background-color: #70261f;
+    border-radius: 9px;
+}
+footer input:hover{ 
+    opacity: 0.7;
 }
 
-@keyframes visibility {
+
+
+/*          Animações               */
+.card{ 
+    transition: 700ms transform cubic-bezier(.42, 0, .65, 1.7);
+
+}
+.card:hover{ 
+    transform: scale(1.08);
+    transition: 100ms transform cubic-bezier(.42, 0, .65, 1.7);
+}
+
+
+@keyframes visibility{
     0%{ 
         opacity: 0;
     }
@@ -172,6 +191,18 @@ header img{
         opacity: 1;
     }
 }
+@keyframes posicao{ 
+    from{
+        background-position: 45deg, 0%;
+        background-size: 150%;
+    }
+    to{
+        background-position: 100%;
+        background-size: 100%;
+    }
+}
+
+
 
 /*
 Explicando algumas propriedades e seus valores.: 
@@ -200,8 +231,3 @@ align-items: center;
 - Estamos dizendo em qual posição o conteúdo irá ficar na vertical (totalmente para cima, baixo, meio, abaixo do centro..)
 
 */ 
-
-
-
-
-
