@@ -1,4 +1,4 @@
-let atraso = -0.2
+let atraso = 0.3    
 
 function CreatSchedule(date, day, games){
     atraso += 0.2;
