@@ -26,7 +26,9 @@ function CreatGames(team1, time, team2){
 
 var CreatSchedules = document.querySelector('#cartoes')
 CreatSchedules.innerHTML = 
+CreatSchedule('11/12', 'Monday', CreatGames('brazil', '15:20', 'uruguai') + CreatGames('switzerland', '12:20', 'portugal') + CreatGames('switzerland', '12:20', 'portugal') + CreatGames('switzerland', '12:20', 'portugal')) +
 CreatSchedule('11/12', 'Monday', CreatGames('brazil', '15:20', 'uruguai') + CreatGames('switzerland', '12:20', 'portugal')) +
+
 CreatSchedule('23/12', 'Tuesday', CreatGames('brazil', '15:20', 'uruguai')) + 
 CreatSchedule('15/12', 'Friday', CreatGames('brazil', '15:20', 'uruguai')) + 
 CreatSchedule('18/12', 'Saturday', CreatGames('brazil', '15:20', 'uruguai'))

@@ -84,12 +84,15 @@ header img{
     gap: 42px;
     width: 270px;
 }
+
+
 /* Toda a declaration abaixo só sera adicionada caso exista uma <li> antes de uma <li> */
 .card ul li + li{ 
     padding-top: 36px;
     border-top: 1px solid var(--between-games-border-color);
     border-radius: 5px;
 }
+
 /* Horário  &  países que irão jogar */ 
 .card ul li{  
     display: flex;
