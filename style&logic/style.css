@@ -190,14 +190,16 @@ body.red{
 @keyframes entrada{ 
     from{
         background-position: 45deg, 0%;
-        background-size: 170%;
+        background-size: 180%;
     }
     to{
         background-position: 100%;
         background-size: 100%;
     }
-}
 
+
+    
+}
 
 
 /*
