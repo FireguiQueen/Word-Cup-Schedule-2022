@@ -1,6 +1,6 @@
 # World Cup Schedule - 2022 
 
-+ [Project]('#sparkles-project')
++ [Project](#sparkles-project)
 
 <li type="square"> <a href="#sparkles-project">Project</a>
 <li type="square"> <a href="#sunrise-layout">Layout</a>
