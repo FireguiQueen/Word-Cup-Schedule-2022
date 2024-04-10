@@ -1,9 +1,9 @@
 # World Cup Schedule - 2022 
 
-<p align="center">
+<div align="center">
   
 [Project](#sparkles-project) | [Layout](#sunrise-layout) | [Technologies](#computer-technologies)
-</p>
+</div>
 
 
 
